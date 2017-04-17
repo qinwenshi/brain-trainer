@@ -12,4 +12,4 @@ with io.open('words.txt','r',encoding='utf8') as f:
 words = re.split('\W+', text, flags=re.UNICODE)
 
 for i in range(0, 10):
-  print random.choice(words)
+  print i+1, random.choice(words)
